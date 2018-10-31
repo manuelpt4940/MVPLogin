@@ -1,12 +1,12 @@
 package com.example.usuario.mvplogin.Presenter;
 
 import com.example.usuario.mvplogin.Model.User;
-import com.example.usuario.mvplogin.View.ILoginView;
+import com.example.usuario.mvplogin.View.MainActivity;
 
-public class LoginPresenter implements ILoginPresenter {
-    ILoginView loginView;
+public class LoginPresenter implements ILogin.ILoginPresenter {
+    MainActivity loginView;
 
-    public LoginPresenter(ILoginView loginView) {
+    public LoginPresenter(MainActivity loginView) {
         this.loginView = loginView;
     }
 

@@ -1,4 +1,4 @@
-package com.example.usuario.mvplogin;
+package com.example.usuario.mvplogin.View;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,16 +7,17 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.usuario.mvplogin.Presenter.ILoginPresenter;
+import com.example.usuario.mvplogin.Presenter.ILogin;
 import com.example.usuario.mvplogin.Presenter.LoginPresenter;
-import com.example.usuario.mvplogin.View.ILoginView;
+import com.example.usuario.mvplogin.R;
 
-public class MainActivity extends AppCompatActivity implements ILoginView {
+
+public class MainActivity extends AppCompatActivity implements ILogin.ILoginView {
 
     EditText edt_email, edt_password;
     Button btnLogin;
 
-    ILoginPresenter loginPresenter;
+    LoginPresenter loginPresenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

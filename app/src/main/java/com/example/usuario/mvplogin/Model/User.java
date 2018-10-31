@@ -3,9 +3,10 @@ package com.example.usuario.mvplogin.Model;
 import android.text.TextUtils;
 import android.util.Patterns;
 
-import java.util.regex.Pattern;
+import com.example.usuario.mvplogin.Presenter.ILogin;
 
-public class User implements IUser {
+
+public class User implements ILogin.IUser {
     private String email,password;
 
     public User(String email, String password) {
